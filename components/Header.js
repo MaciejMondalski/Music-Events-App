@@ -7,7 +7,9 @@ const Header = () => {
       <div className='wrapper'>
         <div className='logo'>
           <Link href='.'>
-            <a>LOGO</a>
+            <a className='logo'>
+              <h2>LOGO</h2>
+            </a>
           </Link>
         </div>
         <nav>
@@ -27,16 +29,22 @@ const Header = () => {
 const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
-	width: 100vw;
-	height:10vh;
-	align-items:center;
-	border-bottom: 3px solid #bbbbbe;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  border-bottom: 3px solid #bbbbbe;
   box-shadow: 0px 1px 5px #bbbbbe;
 
   .wrapper {
     display: flex;
     justify-content: space-between;
-		width: 90vw;
+    width: 90vw;
+    align-items: center;
+
+    .logo {
+      color: #613fb7;
+      cursor: pointer;
+    }
 
     a {
       color: inherit;

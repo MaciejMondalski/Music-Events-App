@@ -18,7 +18,9 @@ const Footer = () => {
 const StyledFooter = styled.footer`
   width: 100%;
   display: flex;
-  justify-content: center;
+	justify-content: center;
+	position: fixed;
+  bottom: 0;
 
   .footer {
     width: 80%;

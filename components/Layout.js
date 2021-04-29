@@ -1,9 +1,13 @@
-import GlobalStyle from "../styles/GlobalStyle";
+import GlobalStyle from "@/styles/GlobalStyle";
 import Meta from "./Meta";
 import Header from "./Header";
 import Footer from "./Footer";
+import Showcase from "./Showcase";
+import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
+
   return (
     <>
       <>
@@ -13,8 +17,10 @@ const Layout = ({ children }) => {
 
       <div className='layout'>
         <Header />
+        {router.pathname === "/" && <Showcase />}
+
         <div className='content'>{children}</div>
-				<Footer/>
+        <Footer />
       </div>
     </>
   );

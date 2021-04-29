@@ -30,7 +30,8 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 10vh;
+	height: 6vh;
+	max-height: 5rem;
   align-items: center;
   border-bottom: 3px solid #bbbbbe;
   box-shadow: 0px 1px 5px #bbbbbe;

@@ -8,6 +8,11 @@ export default function HomePage({ events }) {
     <StyledHome>
       <div className='wrapper'>
         <h1>Upcoming Events</h1>
+				{events.length === 0 && <h3>No events to show</h3>}
+
+				{events.map((evt) => (
+					<h3 key={evt.id}>{evt.name}</h3>
+				))}
       </div>
     </StyledHome>
   );
@@ -31,6 +36,7 @@ const StyledHome = styled.div`
 
   .wrapper {
     display: flex;
+		flex-direction: column;
     justify-content: center;
     width: 90vw;
     align-items: center;

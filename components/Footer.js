@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Copyright &copy; Music Events 2021</p>
 
         <Link href='/about'>
-          <p className="about-p">About this project</p>
+          <p className='about-p'>About this project</p>
         </Link>
       </div>
     </StyledFooter>
@@ -18,9 +18,7 @@ const Footer = () => {
 const StyledFooter = styled.footer`
   width: 100%;
   display: flex;
-	justify-content: center;
-	position: fixed;
-  bottom: 0;
+  justify-content: center;
 
   .footer {
     width: 80%;
@@ -34,11 +32,11 @@ const StyledFooter = styled.footer`
       padding: 0.2rem;
       color: inherit;
       text-decoration: none;
-		}
-		
-		.about-p{
-			color: #613fb7;
-		}
+    }
+
+    .about-p {
+      color: #613fb7;
+    }
   }
 `;
 

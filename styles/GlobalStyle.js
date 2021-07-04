@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
 	font-family: 'Poppins', sans-serif;
+	
 
 	.layout {
 	height: 100%;
@@ -13,6 +14,8 @@ const GlobalStyle = createGlobalStyle`
   display: flex;
 	flex-direction: column;
 	align-items: center;
+	background:#f9fcfc;
+	min-height:100vh
 
 }
 

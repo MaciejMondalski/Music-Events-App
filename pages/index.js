@@ -14,12 +14,12 @@ export default function HomePage({ events }) {
         {events.map((evt) => (
           <EventItem key={evt.id} evt={evt} />
         ))}
+        {events.length > 0 && (
+          <Link href='/events'>
+            <a className='btn-secondary'>View All Events</a>
+          </Link>
+        )}
       </div>
-      {events.length > 0 && (
-        <Link href='/events'>
-          <a className='btn-secondary'>View All Events</a>
-        </Link>
-      )}
     </StyledHome>
   );
 }
@@ -45,5 +45,21 @@ const StyledHome = styled.div`
     justify-content: center;
     width: 90vw;
     align-items: center;
+
+    h1 {
+      margin: 1rem;
+    }
+
+    .btn-secondary {
+      margin: 1rem 0;
+			text-align: center;
+      text-decoration: none;
+      color: white;
+			font-weight: bold;
+      background: #000;
+      padding: 1rem 2rem;
+      border-radius: 0.4rem;
+      margin: 2rem;
+    }
   }
 `;

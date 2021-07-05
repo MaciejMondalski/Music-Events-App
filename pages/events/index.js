@@ -43,5 +43,9 @@ const StyledHome = styled.div`
     justify-content: center;
     width: 90vw;
     align-items: center;
+
+		h1{
+			margin: 1rem;
+		}
   }
 `;

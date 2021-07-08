@@ -11,4 +11,11 @@ const EventPage = () => {
   );
 };
 
+export const getServerSideProps = async ({ query: { slug } }) => {
+  console.log(slug);
+  return {
+    props: {},
+  };
+};
+
 export default EventPage;

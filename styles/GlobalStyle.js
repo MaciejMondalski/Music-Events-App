@@ -14,9 +14,8 @@ const GlobalStyle = createGlobalStyle`
   display: flex;
 	flex-direction: column;
 	align-items: center;
-	background:#f9fcfc;
-	min-height:100vh
-
+	background:#f4f5f8;
+	min-height:100vh;
 }
 
 .content {

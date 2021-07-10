@@ -45,10 +45,10 @@ const StyledHome = styled.div`
     justify-content: center;
     width: 90vw;
     align-items: center;
+		margin: 3rem;
 
-    h1 {
-      margin: 1rem;
-    }
+
+  
 
     .btn-secondary {
       margin: 1rem 0;

@@ -30,6 +30,17 @@ const EventPage = ({ evt }) => {
           <Image src={evt.image} width={960} height={600} />
         </div>
       )}
+      <div className='more-info'>
+        <h3>Performers:</h3>
+        <p>{evt.performers}</p>
+        <h3>Description:</h3>
+        <p>{evt.description}</p>
+        <h3>Venue: {evt.venue}</h3>
+        <p>{evt.address}</p>
+        <Link href='/events'>
+          <a classname='back-btn'>{"<"} Go Back</a>
+        </Link>
+      </div>
     </StyledEventPage>
   );
 };
@@ -75,6 +86,18 @@ const StyledEventPage = styled.div`
   .delete {
     margin-left: 20px;
     color: red;
+  }
+
+  .more-info {
+    width: 960px;
+    padding: 1rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+
   }
 `;
 
